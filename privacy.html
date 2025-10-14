@@ -1,149 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MotoMPG Privacy Policy</title>
-  <meta name="description" content="Privacy Policy for MotoMPG by Mountain Root, LLC.">
+  <meta name="description" content="MotoMPG Privacy Policy by Mountain Root, LLC">
   <style>
     :root {
-      --fg: #1f2937; /* slate-800 */
-      --muted: #6b7280; /* gray-500 */
-      --link: #2563eb; /* blue-600 */
       --bg: #ffffff;
-      --border: #e5e7eb; /* gray-200 */
+      --fg: #111111;
+      --muted: #555555;
+      --accent: #0a84ff;
+      --border: #e6e6e6;
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--fg);
-      background: var(--bg);
-      line-height: 1.6;
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0c0c0c;
+        --fg: #f1f1f1;
+        --muted: #c0c0c0;
+        --accent: #0a84ff;
+        --border: #2a2a2a;
+      }
     }
-    header, main, footer { display: block; }
-    .container { max-width: 860px; margin: 0 auto; padding: 24px; }
-    header { border-bottom: 1px solid var(--border); background: #fafafa; }
-    header h1 { margin: 0 0 6px; font-size: 28px; }
-    header p { margin: 0; color: var(--muted); }
-    nav { margin-top: 8px; }
-    nav a { color: var(--link); text-decoration: none; margin-right: 14px; }
-    nav a:hover { text-decoration: underline; }
-    h2 { margin-top: 28px; font-size: 22px; }
-    h3 { margin-top: 22px; font-size: 18px; }
-    ul { padding-left: 20px; }
-    .note { padding: 10px 12px; background: #f3f4f6; border: 1px solid var(--border); border-radius: 8px; color: #374151; }
-    footer { border-top: 1px solid var(--border); margin-top: 32px; color: var(--muted); font-size: 14px; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; }
+    .container { max-width: 820px; margin: 0 auto; padding: 24px; }
+    header { padding: 16px 0 8px; }
+    h1 { font-size: 2rem; margin: 0 0 4px; }
+    .muted { color: var(--muted); }
+    h2 { margin-top: 28px; font-size: 1.375rem; }
+    h3 { margin-top: 22px; font-size: 1.125rem; }
+    p { margin: 12px 0; }
+    ul { margin: 8px 0 16px 20px; }
+    li { margin: 6px 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .section { padding-top: 8px; border-top: 1px solid var(--border); margin-top: 24px; }
+    footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 0.95rem; }
   </style>
 </head>
 <body>
-  <header>
-    <div class="container">
+  <div class="container">
+    <header>
       <h1>MotoMPG Privacy Policy</h1>
-      <p>Effective date: October 5, 2025</p>
-      <nav>
-        <a href="index.html">Terms of Use</a>
-        <a href="privacy.html" aria-current="page">Privacy</a>
-      </nav>
-    </div>
-  </header>
+      <p class="muted">Effective date: October 5, 2025</p>
+      <p class="muted">Mountain Root, LLC ("Mountain Root", "we", "us", or "our")</p>
+    </header>
 
-  <main class="container">
-    <p>This Privacy Policy explains how Mountain Root, LLC ("Mountain Root," "we," "us," or "our") collects, uses, and shares information when you use the MotoMPG mobile application and related services (the "Service").</p>
-    <p>By using the Service, you agree to the collection and use of information in accordance with this policy. If you do not agree, please do not use the Service.</p>
+    <section class="section" id="intro">
+      <p>This Privacy Policy explains how Mountain Root, LLC ("Mountain Root," "we," "us," or "our") collects, uses, and shares information when you use the MotoMPG mobile application and related services (the "Service").</p>
+      <p>By using the Service, you agree to the collection and use of information in accordance with this policy. If you do not agree, please do not use the Service.</p>
+    </section>
 
-    <h2>Information We Collect</h2>
-    <p>We collect information that you provide to us directly, information collected automatically when you use the Service, and information from service providers acting on our behalf.</p>
-    <h3>1) Account Information</h3>
-    <ul>
-      <li>Email address</li>
-      <li>Display name (optional)</li>
-      <li>Firebase user identifier (UID)</li>
-    </ul>
-    <h3>2) User Content</h3>
-    <ul>
-      <li>Motorcycle records (bikes), trips, fill-ups, notes, and related metadata you create in the app</li>
-    </ul>
-    <h3>3) Identifiers and App Activity</h3>
-    <ul>
-      <li>App/installation identifiers (e.g., Firebase Installations ID)</li>
-      <li>Basic app activity and timestamps needed to operate the Service (e.g., sign-in/sign-out, content creation time)</li>
-    </ul>
-    <h3>4) Diagnostics (only if enabled in a future version)</h3>
-    <ul>
-      <li>Crash and performance data to improve reliability. If we add a crash/performance SDK (e.g., Firebase Crashlytics), we will update this policy and our App Store privacy disclosure accordingly.</li>
-    </ul>
-    <p class="note">We do not collect the advertising identifier (IDFA) and we do not track users across other companies’ apps or websites.</p>
+    <section class="section" id="information-we-collect">
+      <h2>Information We Collect</h2>
+      <p>We collect information that you provide to us directly, information collected automatically when you use the Service, and information from service providers acting on our behalf.</p>
 
-    <h2>How We Use Information</h2>
-    <ul>
-      <li>Provide core functionality of the Service (sign-in, create/edit bikes, trips, fill-ups)</li>
-      <li>Sync and back up your data across devices for subscribers</li>
-      <li>Operate, maintain, and improve the Service (including customer support)</li>
-      <li>Communicate important updates or policy changes</li>
-      <li>Enforce our Terms of Use and protect the Service against fraud, abuse, or misuse</li>
-      <li>Comply with applicable laws and regulations</li>
-    </ul>
+      <h3>1) Account Information</h3>
+      <ul>
+        <li>Email address</li>
+        <li>Display name (optional)</li>
+        <li>Firebase user identifier (UID)</li>
+      </ul>
 
-    <h2>Legal Bases (EEA/UK users)</h2>
-    <ul>
-      <li>Performance of a contract (to provide the Service you request)</li>
-      <li>Our legitimate interests (e.g., to secure and improve the Service)</li>
-      <li>Your consent (where required by law)</li>
-    </ul>
+      <h3>2) User Content</h3>
+      <p>User Content includes motorcycle records (bikes), trips, fill-ups, notes, and related metadata such as dates, odometer readings, gallons, miles, and user-entered total cost amounts. We store these values to compute MPG and related statistics. We do not collect payment card or billing information.</p>
 
-    <h2>Sharing of Information</h2>
-    <p>We do not sell your personal information. We share information only as described below:</p>
-    <ul>
-      <li><strong>Service Providers:</strong> We use trusted third parties to host, store, and process data on our behalf (e.g., Google Firebase for authentication and database). These providers are contractually obligated to process data only as instructed by us and not for their own purposes.</li>
-      <li><strong>Legal and Safety:</strong> We may disclose information if required by law or to protect the rights, property, or safety of Mountain Root, our users, or the public.</li>
-      <li><strong>Business Transfers:</strong> If we are involved in a merger, acquisition, or asset sale, your information may be transferred as part of that transaction, subject to this policy.</li>
-    </ul>
-    <p>Firebase acts as our data processor/service provider. For details on Firebase’s privacy practices, see: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a>.</p>
+      <h3>3) Identifiers and App Activity</h3>
+      <ul>
+        <li>App/installation identifiers (e.g., Firebase Installations ID)</li>
+        <li>Basic app activity and timestamps needed to operate the Service (e.g., sign-in/sign-out, content creation time)</li>
+      </ul>
 
-    <h2>Tracking and Advertising</h2>
-    <ul>
-      <li>We do not use IDFA.</li>
-      <li>We do not link your data with third-party data for advertising or measurement across other companies’ apps or websites.</li>
-      <li>We do not share data with data brokers.</li>
-    </ul>
-    <p>If this changes in the future, we will update this policy and our App Store privacy disclosure and, where required, request your permission.</p>
+      <h3>4) Diagnostics (only if enabled in a future version)</h3>
+      <p>Crash and performance data to improve reliability. If we add a crash/performance SDK (e.g., Firebase Crashlytics), we will update this policy and our App Store privacy disclosure accordingly.</p>
 
-    <h2>Data Retention</h2>
-    <p>We retain your data for as long as your account is active or as needed to provide the Service. If you delete your account, we will delete or de-identify your personal data within a reasonable period, subject to legal obligations.</p>
+      <p>We do not collect the advertising identifier (IDFA) and we do not track users across other companies’ apps or websites.</p>
+    </section>
 
-    <h2>Security</h2>
-    <p>We implement reasonable technical and organizational measures to protect your information. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+    <section class="section" id="public-content">
+      <h2>Public Content and Aggregates</h2>
+      <p>You may choose to mark certain items (such as bikes and fill-ups) as public. Public items may be included in leaderboards and aggregated statistics that are visible to other users. You can change the public/private setting at any time in the app. When you change items to private, they will be excluded from future public leaderboards and aggregates. Previously published aggregates may not update immediately.</p>
+    </section>
 
-    <h2>Children’s Privacy</h2>
-    <p>The Service is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us personal information, contact us and we will take appropriate steps to delete such information.</p>
+    <section class="section" id="how-we-use-information">
+      <h2>How We Use Information</h2>
+      <ul>
+        <li>Provide core functionality of the Service (sign-in, create/edit bikes, trips, fill-ups)</li>
+        <li>Sync and back up your data across devices for subscribers</li>
+        <li>Operate, maintain, and improve the Service (including customer support)</li>
+        <li>Communicate important updates or policy changes</li>
+        <li>Provide public leaderboards and aggregated statistics for users who choose to share their data publicly</li>
+        <li>Enforce our Terms of Use and protect the Service against fraud, abuse, or misuse</li>
+        <li>Comply with applicable laws and regulations</li>
+      </ul>
+    </section>
 
-    <h2>International Transfers</h2>
-    <p>Your information may be processed and stored in the United States and other countries where our service providers operate. By using the Service, you acknowledge that your information may be transferred to jurisdictions with data protection laws that may differ from those in your location.</p>
+    <section class="section" id="legal-bases">
+      <h2>Legal Bases (EEA/UK users)</h2>
+      <ul>
+        <li>Performance of a contract (to provide the Service you request)</li>
+        <li>Our legitimate interests (e.g., to secure and improve the Service)</li>
+        <li>Your consent (where required by law)</li>
+      </ul>
+    </section>
 
-    <h2>Your Choices and Rights</h2>
-    <ul>
-      <li><strong>Access, Update, Delete:</strong> You can update your display name in-app. You can delete your account in-app (Profile &gt; Delete Account) which removes your personal data from our systems, subject to legal obligations.</li>
-      <li><strong>Communications:</strong> We may send you important service or policy updates. If we send optional communications (e.g., tips), you can opt out as instructed in those communications.</li>
-      <li><strong>Platform Settings:</strong> You may control certain permissions and analytics preferences at the OS level (e.g., iOS Settings).</li>
-    </ul>
-    <p>If you are in the EEA/UK, you may have additional rights under applicable data protection laws (e.g., right to access, rectify, erase, restrict, object, and data portability). To exercise these rights, contact us.</p>
+    <section class="section" id="sharing-of-information">
+      <h2>Sharing of Information</h2>
+      <p>We do not sell your personal information. We share information only as described below:</p>
+      <ul>
+        <li><strong>Service Providers:</strong> We use trusted third parties to host, store, and process data on our behalf (e.g., Google Firebase for authentication and database). These providers are contractually obligated to process data only as instructed by us and not for their own purposes.</li>
+        <li><strong>Legal and Safety:</strong> We may disclose information if required by law or to protect the rights, property, or safety of Mountain Root, our users, or the public.</li>
+        <li><strong>Business Transfers:</strong> If we are involved in a merger, acquisition, or asset sale, your information may be transferred as part of that transaction, subject to this policy.</li>
+      </ul>
+      <p>Firebase acts as our data processor/service provider. For details on Firebase’s privacy practices, see: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a>.</p>
+    </section>
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. The “Effective date” above indicates when it was last revised. Material changes will be communicated within the app or on this page.</p>
+    <section class="section" id="tracking-and-advertising">
+      <h2>Tracking and Advertising</h2>
+      <ul>
+        <li>We do not use IDFA.</li>
+        <li>We do not link your data with third-party data for advertising or measurement across other companies’ apps or websites.</li>
+        <li>We do not share data with data brokers.</li>
+        <li>We do not collect precise location data.</li>
+      </ul>
+      <p>If this changes in the future, we will update this policy and our App Store privacy disclosure and, where required, request your permission.</p>
+    </section>
 
-    <h2>Contact Us</h2>
-    <address>
-      Mountain Root, LLC<br>
-      Email: <a href="mailto:hello@mtnroot.com">hello@mtnroot.com</a>
-    </address>
-  </main>
+    <section class="section" id="offline-caching">
+      <h2>Offline Access and Local Caching</h2>
+      <p>To support offline access and fast loading, the app uses a local cache managed by Firebase on your device. Cached data may persist on your device until it is evicted by the system or you uninstall the app.</p>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Mountain Root, LLC. All rights reserved.</p>
-    </div>
-  </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <section class="section" id="data-retention">
+      <h2>Data Retention</h2>
+      <p>We retain your data for as long as your account is active or as needed to provide the Service. If you delete your account, we will delete or de-identify your personal data within a reasonable period, including data stored in Firebase, subject to legal obligations. Local cached copies on your device are managed by Firebase and the operating system and may be removed upon uninstall or cache eviction.</p>
+    </section>
+
+    <section class="section" id="security">
+      <h2>Security</h2>
+      <p>We implement reasonable technical and organizational measures to protect your information. Access to your private data is restricted by server-side security rules so that only your account can read or modify it. Data is transmitted over encrypted connections and stored by Firebase with encryption at rest. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+    </section>
+
+    <section class="section" id="childrens-privacy">
+      <h2>Children’s Privacy</h2>
+      <p>The Service is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us personal information, contact us and we will take appropriate steps to delete such information.</p>
+    </section>
+
+    <section class="section" id="international-transfers">
+      <h2>International Transfers</h2>
+      <p>Your information may be processed and stored in the United States and other countries where our service providers operate. By using the Service, you acknowledge that your information may be transferred to jurisdictions with data protection laws that may differ from those in your location.</p>
+    </section>
+
+    <section class="section" id="your-rights">
+      <h2>Your Choices and Rights</h2>
+      <ul>
+        <li><strong>Access, Update, Delete:</strong> You can update your display name in-app. You can delete your account in-app (Profile &gt; Delete Account) which removes your personal data from our systems, subject to legal obligations.</li>
+        <li><strong>Communications:</strong> We may send you important service or policy updates. If we send optional communications (e.g., tips), you can opt out as instructed in those communications.</li>
+        <li><strong>Platform Settings:</strong> You may control certain permissions and analytics preferences at the OS level (e.g., iOS Settings).</li>
+      </ul>
+      <p>If you are in the EEA/UK, you may have additional rights under applicable data protection laws (e.g., right to access, rectify, erase, restrict, object, and data portability). To exercise these rights, contact us.</p>
+      <p>To exercise your privacy rights, including access, deletion, or objections, contact us at <a href="mailto:hello@mtnroot.com">hello@mtnroot.com</a>.</p>
+    </section>
+
+    <section class="section" id="changes">
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. The “Effective date” above indicates when it was last revised. Material changes will be communicated within the app or on this page.</p>
+    </section>
+
+    <footer>
+      <p><strong>Contact Us</strong></p>
+      <p>Mountain Root, LLC<br>
+      Email: <a href="mailto:hello@mtnroot.com">hello@mtnroot.com</a></p>
+      <p class="muted">© 2025 Mountain Root, LLC. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
